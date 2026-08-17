@@ -1,137 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tekton App — Privacy Policy</title>
+<title>Tekton — Pogoji uporabe / Terms of Use</title>
 <style>
-  body { font-family: -apple-system, Segoe UI, Roboto, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px; line-height: 1.6; color: #1a2530; background: #f7f9fc; }
-  h1 { color: #06122A; }
-  h2 { color: #8B3A3A; margin-top: 32px; }
-  .lang { background: #06122A; color: #FFE082; padding: 6px 14px; border-radius: 8px; display: inline-block; margin: 24px 0 8px; font-weight: bold; }
-  a { color: #8B3A3A; }
-  .updated { color: #6B8299; font-size: 14px; }
-  hr { border: none; border-top: 1px solid #d0d7e0; margin: 40px 0; }
+  :root{
+    --bg:#FFFFFF;
+    --card:#F7F8FA;
+    --line:#E3E7ED;
+    --gold:#B8912A;
+    --navy:#09152B;
+    --text:#1A2433;
+    --muted:#5C6880;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    padding:24px 16px 60px;
+    background:var(--bg);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    line-height:1.65;
+    font-size:15px;
+  }
+  .wrap{max-width:760px;margin:0 auto;}
+  header{text-align:center;margin-bottom:28px;padding-bottom:18px;border-bottom:2px solid var(--gold);}
+  h1{color:var(--navy);font-size:26px;margin:0 0 6px;letter-spacing:1px;}
+  .sub{color:var(--muted);font-size:13px;}
+  .tabs{display:flex;gap:8px;justify-content:center;margin:22px 0 26px;}
+  .tab{
+    padding:9px 20px;border-radius:10px;cursor:pointer;
+    background:var(--card);border:1px solid var(--line);
+    color:var(--muted);font-size:13px;font-weight:600;user-select:none;
+  }
+  .tab.on{background:var(--navy);color:#FFFFFF;border-color:var(--navy);}
+  h2{color:var(--navy);font-size:16px;margin:26px 0 8px;}
+  p{margin:0 0 12px;}
+  ul{margin:0 0 12px;padding-left:20px;}
+  li{margin-bottom:6px;}
+  .box{
+    background:var(--card);border:1px solid var(--line);
+    border-radius:12px;padding:16px 18px;margin-top:24px;font-size:14px;
+  }
+  .box a{color:var(--gold);}
+  footer{margin-top:34px;text-align:center;color:var(--muted);font-size:12px;}
+  .hide{display:none;}
 </style>
 </head>
 <body>
+<div class="wrap">
 
-<h1>Tekton — Privacy Policy</h1>
-<p class="updated">Last updated: 28 June 2026</p>
+  <header>
+    <h1>TEKTON</h1>
+    <div class="sub">Pogoji uporabe &nbsp;·&nbsp; Terms of Use</div>
+  </header>
 
-<p>This Privacy Policy describes how the <strong>Tekton</strong> application ("the App", "we", "us") collects, uses, and protects your information. By using the App you agree to the practices described here.</p>
+  <div class="tabs">
+    <div class="tab on" id="t-sl" onclick="prikazi('sl')">Slovensko</div>
+    <div class="tab" id="t-en" onclick="prikazi('en')">English</div>
+  </div>
 
-<h2>1. Information We Collect</h2>
-<p>The App collects the following data only to provide its core functionality (creating construction daily logs):</p>
-<ul>
-  <li><strong>Audio recordings</strong> — voice notes you record describing construction work. Recorded only when you start a recording.</li>
-  <li><strong>Photographs</strong> — images you take or select to document the construction site.</li>
-  <li><strong>Location data</strong> — your approximate and precise location, used to attach weather conditions and the site location to your daily log.</li>
-  <li><strong>Text you enter</strong> — project details, names, and notes you type into the App.</li>
-</ul>
+  <section id="sl">
 
-<h2>2. How We Use Your Information</h2>
-<ul>
-  <li>Audio recordings and photographs are sent to our processing service to generate professional text summaries for your construction log (AI analysis).</li>
-  <li>Location is used to fetch local weather data and to label the site location on the log.</li>
-  <li>Your projects, logs, photos, and recordings are stored so you can access them across sessions and devices.</li>
-</ul>
+    <p class="sub">Zadnja posodobitev: 17. avgust 2026</p>
 
-<h2>3. Third-Party Services</h2>
-<p>The App uses the following third-party services to function:</p>
-<ul>
-  <li><strong>Supabase</strong> — secure cloud storage and database for your projects, logs, photos, and recordings.</li>
-  <li><strong>Google Gemini (AI)</strong> — processes your audio and photos to generate text summaries.</li>
-  <li><strong>Open-Meteo</strong> — provides weather data based on your location.</li>
-</ul>
-<p>These services process data only as needed to provide the App's features.</p>
+    <h2>1. Splošno</h2>
+    <p>Ti pogoji urejajo uporabo mobilne aplikacije Tekton (v nadaljevanju »aplikacija«). Ponudnik aplikacije je Admir Pajić (v nadaljevanju »ponudnik«). Z namestitvijo ali uporabo aplikacije se strinjate s temi pogoji. Če se s pogoji ne strinjate, aplikacije ne uporabljajte.</p>
 
-<h2>4. Data Retention</h2>
-<p>Your data is stored as long as you keep it in the App. You can delete individual projects, logs, photos, and recordings at any time within the App. Deleting them removes them from our storage.</p>
+    <h2>2. Opis storitve</h2>
+    <p>Tekton je orodje za vodenje gradbenega dnevnika. Omogoča glasovni vnos, samodejno obdelavo besedila s pomočjo umetne inteligence, shranjevanje fotografij ter ustvarjanje dnevnih listov v obliki PDF.</p>
 
-<h2>5. Data Sharing</h2>
-<p>We do not sell your personal data. We do not share your data with advertisers. Data is shared only with the third-party services listed above, solely to operate the App.</p>
+    <h2>3. Uporabniški račun</h2>
+    <ul>
+      <li>Za uporabo aplikacije je potrebna registracija z veljavnim e-poštnim naslovom.</li>
+      <li>Za varovanje gesla in dostopa do računa ste odgovorni sami.</li>
+      <li>Račun je namenjen osebni oziroma poslovni uporabi imetnika in ga ni dovoljeno deliti z drugimi.</li>
+    </ul>
 
-<h2>6. Permissions</h2>
-<p>The App requests these device permissions:</p>
-<ul>
-  <li><strong>Microphone</strong> — to record voice notes.</li>
-  <li><strong>Camera</strong> — to take site photographs.</li>
-  <li><strong>Location</strong> — to attach weather and site location to logs.</li>
-  <li><strong>Internet</strong> — to sync data and run AI analysis.</li>
-</ul>
-<p>You can revoke these permissions at any time in your device settings, though some features may stop working.</p>
+    <h2>4. Naročnine in plačila</h2>
+    <ul>
+      <li>Aplikacija ponuja brezplačno različico z omejenim številom vnosov ter plačljive pakete z razširjenimi možnostmi.</li>
+      <li>Vsa plačila potekajo prek sistema Google Play. Ponudnik ne prejme in ne hrani podatkov o vaši plačilni kartici.</li>
+      <li>Naročnino lahko kadar koli prekličete v nastavitvah Google Play. Preklic začne veljati ob koncu tekočega obračunskega obdobja.</li>
+      <li>Za vračila veljajo pravila trgovine Google Play.</li>
+    </ul>
 
-<h2>7. Children's Privacy</h2>
-<p>The App is intended for professional construction use and is not directed at children under 13.</p>
+    <h2>5. Vaša vsebina</h2>
+    <ul>
+      <li>Vsebina, ki jo vnesete v aplikacijo (besedila, fotografije, posnetki), ostaja vaša last.</li>
+      <li>Fotografije se hranijo lokalno na vaši napravi. Besedilo dnevnih listov in podatki o projektih se hranijo na strežniku, da so dostopni ob ponovni prijavi.</li>
+      <li>Ponudnik vaše vsebine ne uporablja za druge namene, kot je delovanje aplikacije.</li>
+      <li>Odgovorni ste, da vnesena vsebina ne krši zakonodaje ali pravic tretjih oseb.</li>
+    </ul>
 
-<h2>8. Your Rights</h2>
-<p>You may request access to, correction of, or deletion of your data by contacting us at the email below.</p>
+    <h2>6. Umetna inteligenca</h2>
+    <p>Aplikacija za obdelavo govora v besedilo uporablja storitev umetne inteligence. Rezultati so samodejno ustvarjeni in lahko vsebujejo napake ali netočnosti. Pred uradno uporabo dnevnega lista ste dolžni vsebino pregledati in po potrebi popraviti. Ponudnik ne jamči za pravno ustreznost samodejno ustvarjenega besedila.</p>
 
-<h2>9. Contact</h2>
-<p>For any questions about this Privacy Policy, contact:<br>
-<strong>Tekton App</strong><br>
-Email: <a href="mailto:pajic.admir@yahoo.de">pajic.admir@yahoo.de</a></p>
+    <h2>7. Omejitev odgovornosti</h2>
+    <p>Aplikacija je na voljo takšna, kot je. Ponudnik ne odgovarja za posredno ali posledično škodo, izgubo podatkov, izgubljeni dobiček ali za posledice sporov, ki bi izhajali iz vsebine dnevnih listov. Ker se fotografije hranijo lokalno, priporočamo redno varnostno kopiranje naprave.</p>
 
-<hr>
+    <h2>8. Nedovoljena uporaba</h2>
+    <ul>
+      <li>Poskusi vdora, obratnega inženiringa ali obhoda omejitev aplikacije.</li>
+      <li>Uporaba aplikacije za nezakonite namene.</li>
+      <li>Preprodaja ali oddajanje dostopa do aplikacije tretjim osebam.</li>
+    </ul>
 
-<span class="lang">SLOVENSKO</span>
+    <h2>9. Prenehanje</h2>
+    <p>Uporabo lahko kadar koli prenehate tako, da izbrišete račun oziroma odstranite aplikacijo. Ponudnik lahko ob resnejših kršitvah teh pogojev dostop do računa omeji ali ukine.</p>
 
-<h1>Tekton — Politika zasebnosti</h1>
-<p class="updated">Zadnja posodobitev: 28. junij 2026</p>
+    <h2>10. Spremembe pogojev</h2>
+    <p>Ponudnik lahko te pogoje posodobi. O pomembnejših spremembah boste obveščeni v aplikaciji ali po e-pošti. Nadaljnja uporaba po objavi sprememb pomeni strinjanje s posodobljenimi pogoji.</p>
 
-<p>Ta politika zasebnosti opisuje, kako aplikacija <strong>Tekton</strong> ("aplikacija", "mi") zbira, uporablja in varuje vaše podatke. Z uporabo aplikacije se strinjate z opisanimi praksami.</p>
+    <h2>11. Veljavno pravo</h2>
+    <p>Za te pogoje velja pravo Republike Slovenije. Morebitne spore rešujemo sporazumno, sicer je pristojno stvarno pristojno sodišče v Sloveniji.</p>
 
-<h2>1. Podatki, ki jih zbiramo</h2>
-<p>Aplikacija zbira naslednje podatke izključno za delovanje svoje osnovne funkcije (ustvarjanje gradbenih dnevnikov):</p>
-<ul>
-  <li><strong>Zvočni posnetki</strong> — glasovne beležke, ki jih posnamete pri opisu gradbenih del. Posnamejo se le, ko sami začnete snemanje.</li>
-  <li><strong>Fotografije</strong> — slike, ki jih posnamete ali izberete za dokumentiranje gradbišča.</li>
-  <li><strong>Podatki o lokaciji</strong> — vaša približna in natančna lokacija, uporabljena za pripis vremenskih razmer in lokacije gradbišča v dnevnik.</li>
-  <li><strong>Besedilo, ki ga vnesete</strong> — podatki o projektu, imena in opombe, ki jih vnesete.</li>
-</ul>
+    <div class="box">
+      <strong>Kontakt</strong><br>
+      Admir Pajić<br>
+      E-pošta: <a href="mailto:sedem.ha@gmail.com">sedem.ha@gmail.com</a><br>
+      Politika zasebnosti: <a href="https://admir1987-cyber.github.io/tekton-privacy">tekton-privacy</a>
+    </div>
 
-<h2>2. Kako uporabljamo vaše podatke</h2>
-<ul>
-  <li>Zvočni posnetki in fotografije se pošljejo naši storitvi za obdelavo, ki ustvari strokovne besedilne povzetke za vaš dnevnik (analiza z umetno inteligenco).</li>
-  <li>Lokacija se uporablja za pridobitev lokalnih vremenskih podatkov in oznako lokacije gradbišča.</li>
-  <li>Vaši projekti, dnevniki, fotografije in posnetki se shranijo, da do njih dostopate med sejami in napravami.</li>
-</ul>
+  </section>
 
-<h2>3. Storitve tretjih oseb</h2>
-<p>Aplikacija za delovanje uporablja naslednje storitve tretjih oseb:</p>
-<ul>
-  <li><strong>Supabase</strong> — varno shranjevanje v oblaku in baza podatkov za vaše projekte, dnevnike, fotografije in posnetke.</li>
-  <li><strong>Google Gemini (UI)</strong> — obdela vaše zvočne posnetke in fotografije za ustvarjanje besedilnih povzetkov.</li>
-  <li><strong>Open-Meteo</strong> — zagotavlja vremenske podatke glede na vašo lokacijo.</li>
-</ul>
+  <section id="en" class="hide">
 
-<h2>4. Hramba podatkov</h2>
-<p>Vaši podatki so shranjeni, dokler jih hranite v aplikaciji. Posamezne projekte, dnevnike, fotografije in posnetke lahko kadar koli izbrišete v aplikaciji. Z izbrisom se odstranijo iz našega shranjevanja.</p>
+    <p class="sub">Last updated: 17 August 2026</p>
 
-<h2>5. Deljenje podatkov</h2>
-<p>Vaših osebnih podatkov ne prodajamo. Podatkov ne delimo z oglaševalci. Podatki se delijo le z zgoraj navedenimi storitvami tretjih oseb, izključno za delovanje aplikacije.</p>
+    <h2>1. General</h2>
+    <p>These terms govern the use of the Tekton mobile application (the "app"). The app is provided by Admir Pajić (the "provider"). By installing or using the app you agree to these terms. If you do not agree, please do not use the app.</p>
 
-<h2>6. Dovoljenja</h2>
-<p>Aplikacija zahteva naslednja dovoljenja naprave:</p>
-<ul>
-  <li><strong>Mikrofon</strong> — za snemanje glasovnih beležk.</li>
-  <li><strong>Kamera</strong> — za fotografiranje gradbišča.</li>
-  <li><strong>Lokacija</strong> — za pripis vremena in lokacije gradbišča.</li>
-  <li><strong>Internet</strong> — za sinhronizacijo podatkov in analizo z UI.</li>
-</ul>
-<p>Dovoljenja lahko kadar koli prekličete v nastavitvah naprave, vendar nekatere funkcije morda ne bodo več delovale.</p>
+    <h2>2. Description of the service</h2>
+    <p>Tekton is a tool for keeping a construction diary. It supports voice input, automatic text processing through artificial intelligence, photo storage, and generation of daily reports in PDF format.</p>
 
-<h2>7. Zasebnost otrok</h2>
-<p>Aplikacija je namenjena strokovni gradbeni uporabi in ni namenjena otrokom, mlajšim od 13 let.</p>
+    <h2>3. User account</h2>
+    <ul>
+      <li>Registration with a valid email address is required to use the app.</li>
+      <li>You are responsible for keeping your password and account access secure.</li>
+      <li>The account is intended for the personal or business use of its holder and may not be shared.</li>
+    </ul>
 
-<h2>8. Vaše pravice</h2>
-<p>Dostop do svojih podatkov, popravek ali izbris lahko zahtevate prek spodnjega e-naslova.</p>
+    <h2>4. Subscriptions and payments</h2>
+    <ul>
+      <li>The app offers a free version with a limited number of entries, and paid plans with extended capabilities.</li>
+      <li>All payments are processed through Google Play. The provider does not receive or store your payment card details.</li>
+      <li>You may cancel your subscription at any time in your Google Play settings. Cancellation takes effect at the end of the current billing period.</li>
+      <li>Refunds are subject to Google Play store policies.</li>
+    </ul>
 
-<h2>9. Kontakt</h2>
-<p>Za vprašanja o tej politiki zasebnosti nas kontaktirajte:<br>
-<strong>Tekton App</strong><br>
-E-pošta: <a href="mailto:pajic.admir@yahoo.de">pajic.admir@yahoo.de</a></p>
+    <h2>5. Your content</h2>
+    <ul>
+      <li>Content you enter into the app (text, photos, recordings) remains yours.</li>
+      <li>Photos are stored locally on your device. Daily report text and project data are stored on the server so they remain available when you sign in again.</li>
+      <li>The provider does not use your content for any purpose other than operating the app.</li>
+      <li>You are responsible for ensuring your content does not violate the law or the rights of third parties.</li>
+    </ul>
 
+    <h2>6. Artificial intelligence</h2>
+    <p>The app uses an artificial intelligence service to convert speech into text. Results are generated automatically and may contain errors or inaccuracies. You are required to review and, where necessary, correct the content before using a daily report officially. The provider makes no warranty as to the legal adequacy of automatically generated text.</p>
+
+    <h2>7. Limitation of liability</h2>
+    <p>The app is provided as is. The provider is not liable for indirect or consequential damages, data loss, lost profit, or the outcome of any dispute arising from the content of daily reports. Since photos are stored locally, regular device backups are recommended.</p>
+
+    <h2>8. Prohibited use</h2>
+    <ul>
+      <li>Attempts at hacking, reverse engineering, or circumventing app limitations.</li>
+      <li>Using the app for unlawful purposes.</li>
+      <li>Reselling or granting access to the app to third parties.</li>
+    </ul>
+
+    <h2>9. Termination</h2>
+    <p>You may stop using the app at any time by deleting your account or uninstalling the app. The provider may restrict or terminate account access in the event of serious breaches of these terms.</p>
+
+    <h2>10. Changes to these terms</h2>
+    <p>The provider may update these terms. You will be notified of significant changes in the app or by email. Continued use after changes are published constitutes acceptance of the updated terms.</p>
+
+    <h2>11. Governing law</h2>
+    <p>These terms are governed by the law of the Republic of Slovenia. Disputes will be resolved amicably where possible; otherwise the competent court in Slovenia shall have jurisdiction.</p>
+
+    <div class="box">
+      <strong>Contact</strong><br>
+      Admir Pajić<br>
+      Email: <a href="mailto:sedem.ha@gmail.com">sedem.ha@gmail.com</a><br>
+      Privacy policy: <a href="https://admir1987-cyber.github.io/tekton-privacy">tekton-privacy</a>
+    </div>
+
+  </section>
+
+  <footer>© 2026 Tekton · Admir Pajić</footer>
+
+</div>
+
+<script>
+function prikazi(j){
+  document.getElementById('sl').classList.toggle('hide', j !== 'sl');
+  document.getElementById('en').classList.toggle('hide', j !== 'en');
+  document.getElementById('t-sl').classList.toggle('on', j === 'sl');
+  document.getElementById('t-en').classList.toggle('on', j === 'en');
+  document.documentElement.lang = j;
+}
+</script>
 </body>
 </html>
